@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/reset.css">
+		<style type="text/css">
+		    html {
+		        width:100%;
+		        height:100px;
+		        overflow-x:hidden;
+		    }
+			body {
+			    text-align: left;
+			    width:100%;
+			    overflow: hidden;
+			    background:#e9dfc7;
+			}
+			.m-read-content {
+			    font-size: 14px;
+			    color:#555;
+			    line-height: 31px;
+			    padding: 15px;
+			}
+			.m-read-content h4 {
+			    font-size:20px;
+			    color:#736357;
+			    border-bottom: solid 1px #736357;
+			    letter-spacing: 2px;
+			    margin: 0 0 1em 0;
+			}
+			
+			.m-read-content p{
+			    text-indent: 2em;
+			    margin: 0.5em 0;
+			    letter-spacing: 0px;
+			    line-height:24px;
+			}
+			
+			.u-tab {
+			    height: 34px;
+			    margin: 10px auto;
+			    line-height:34px;
+			    border-radius: 8px;
+			    border: 1px solid #858382;
+			    font-size:12px;
+			    background: #000;
+			    opacity: 0.9;
+			}
+			
+			.u-tab li {
+			    display:inline-block;
+			    width:49%;
+			    border-right: 1px solid #858382;
+			    text-align: center;
+			    color:#fff;
+			}
+			
+			.u-tab li:nth-child(2){
+			    border-right:none;
+			}
+			
+			.m-button-bar {
+			    width: 70%;
+			    max-width: 800px;
+			    padding:5px;
+			    margin: 0 auto;
+			}
+			
+			.top-nav {
+			    position: fixed;
+			    top:0px;
+			    height: 50px;
+			    width:100%;
+			    z-index:9999;
+			    background: #000;
+			}
+			.icon-back {
+			    position: absolute;
+			    top:14px;
+			    left:10px;
+			    width:23px;
+			    height:23px;
+			    background:url();
+			    background-size:contain;
+			}
+		</style>
+		<title>web阅读器</title>
+	</head>
+	<body>
+		<div id="root" class="container">
+		    <div id="top-nav" class="top-nav">
+		        <div class="icon-back">
+		            
+		        </div>
+		        <div class="nav-title">
+		            返回书架
+		        </div>
+		    </div>
+		    
+		    
+		    <div id="book_title" class="">
+		        
+		    </div>
+		    <div id="book_container" class="m-read-content">
+		        
+		    
+		        <h4>男男女女</h4>
+		        <p>
+		            大地哦嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿
+		        </p>
+		    </div>
+		    <div class="m-button-bar">
+		        <ul class="u-tab">
+		            <li id="prev_button">上一章</li>
+		            <li id="next_button">下一章</li>
+		        </ul>
+		    </div>
+		</div>
+		<script src="lib/zepto.min.js"></script>
+		<script>
+			window.jQuery = $;
+		</script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="js/jquery.jsonp.js"></script>
+
+		<script>
+			
+		</script>
+	</body>
+</html>
