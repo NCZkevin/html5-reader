@@ -1,6 +1,7 @@
 var koa = require('koa');
 var controller = require('koa-route');
 var app = koa();
+var querystring = require('querystring');
 
 var views = require('co-views');
 var render = views('./views',{
@@ -24,6 +25,23 @@ app.use(controller.get('/ejs_test',function*(){
 
 app.use(controller.get('/api_test',function*(){
   this.body = service.get_test_data();
+}));
+
+app.use(controller.get('/index',function*(){
+  this.body = service.get_index_data();
+}));
+
+app.use(controller.get('/rank',function*(){
+  this.body = service.get_rank_data();
+}));
+
+app.use(controller.get('/book',function*(){
+  var params = querystring.parse(this.req._parsedUrl.query);
+  var id = params.id;
+  if (!id) {
+    id = "";
+  }
+  this.body = service.get_book_data(id);
 }));
 
 app.use(controller.get('/search',function*(){
