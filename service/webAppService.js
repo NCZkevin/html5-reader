@@ -9,6 +9,11 @@ exports.get_index_data = function () {
   return content;
 }
 
+exports.get_category_data = function () {
+  var content = fs.readFileSync('./mock/category.json','utf-8');
+  return content;
+}
+
 exports.get_rank_data = function () {
   var content = fs.readFileSync('./mock/rank.json','utf-8');
   return content;

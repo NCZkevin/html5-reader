@@ -35,6 +35,10 @@ app.use(controller.get('/rank',function*(){
   this.body = service.get_rank_data();
 }));
 
+app.use(controller.get('/category',function*(){
+  this.body = service.get_category_data();
+}));
+
 app.use(controller.get('/book',function*(){
   var params = querystring.parse(this.req._parsedUrl.query);
   var id = params.id;
