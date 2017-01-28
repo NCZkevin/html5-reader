@@ -40,6 +40,10 @@ app.use(controller.get('/category',function*(){
 }));
 
 app.use(controller.get('/book',function*(){
+  this.body = service.get_bookbacket_data();
+}));
+
+app.use(controller.get('/book',function*(){
   var params = querystring.parse(this.req._parsedUrl.query);
   var id = params.id;
   if (!id) {

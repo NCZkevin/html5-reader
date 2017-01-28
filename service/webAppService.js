@@ -14,6 +14,11 @@ exports.get_category_data = function () {
   return content;
 }
 
+exports.get_bookbacket_data = function () {
+  var content = fs.readFileSync('./mock/bookbacket.json','utf-8');
+  return content;
+}
+
 exports.get_rank_data = function () {
   var content = fs.readFileSync('./mock/rank.json','utf-8');
   return content;
