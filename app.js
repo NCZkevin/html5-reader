@@ -39,7 +39,7 @@ app.use(controller.get('/category',function*(){
   this.body = service.get_category_data();
 }));
 
-app.use(controller.get('/book',function*(){
+app.use(controller.get('/bookbacket',function*(){
   this.body = service.get_bookbacket_data();
 }));
 
